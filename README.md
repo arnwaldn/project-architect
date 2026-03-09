@@ -7,7 +7,11 @@ Une seule commande, un workflow adaptatif S/M/L/XL, 82 questions, 8 livrables + 
 ## Installation
 
 ```bash
-claude plugin add https://github.com/arnwaldn/project-architect
+# 1. Ajouter le depot comme source de plugins
+claude plugin marketplace add https://github.com/arnwaldn/project-architect
+
+# 2. Installer le plugin
+claude plugin install project-architect
 ```
 
 ## Usage

@@ -1,0 +1,38 @@
+{
+  "name": "project-architect",
+  "owner": {
+    "name": "ATUM SAS"
+  },
+  "metadata": {
+    "description": "Plugin Claude Code pour la preparation complete de projets de dev — workflow adaptatif S/M/L/XL"
+  },
+  "plugins": [
+    {
+      "name": "project-architect",
+      "source": "./",
+      "description": "Preparation complete de projet de dev — de la qualification a la gate pre-dev. Une seule commande, workflow adaptatif S/M/L/XL, 82 questions, 8 livrables + 2 fichiers-pont.",
+      "author": {
+        "name": "ATUM SAS"
+      },
+      "homepage": "https://github.com/arnwaldn/project-architect",
+      "repository": "https://github.com/arnwaldn/project-architect",
+      "license": "MIT",
+      "keywords": [
+        "project-management",
+        "specifications",
+        "architecture",
+        "ux-design",
+        "pre-dev",
+        "workflow"
+      ],
+      "category": "workflow",
+      "tags": [
+        "project-preparation",
+        "specs",
+        "architecture",
+        "agents",
+        "templates"
+      ]
+    }
+  ]
+}
