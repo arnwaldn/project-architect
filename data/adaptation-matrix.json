@@ -1,0 +1,514 @@
+{
+  "sizes": {
+    "S": {
+      "label": "Petit projet",
+      "examples": [
+        "site vitrine",
+        "landing page",
+        "one-page",
+        "portfolio",
+        "blog simple"
+      ],
+      "detection_keywords": [
+        "vitrine",
+        "landing",
+        "one-page",
+        "portfolio",
+        "simple",
+        "petit",
+        "basique",
+        "statique"
+      ]
+    },
+    "M": {
+      "label": "Projet moyen",
+      "examples": [
+        "app mobile",
+        "e-commerce",
+        "PWA",
+        "outil metier",
+        "dashboard",
+        "CRM simple"
+      ],
+      "detection_keywords": [
+        "app",
+        "mobile",
+        "e-commerce",
+        "boutique",
+        "outil",
+        "dashboard",
+        "CRM",
+        "gestion",
+        "PWA",
+        "intranet"
+      ]
+    },
+    "L": {
+      "label": "Grand projet",
+      "examples": [
+        "plateforme SaaS",
+        "marketplace",
+        "multi-utilisateurs",
+        "systeme metier complexe"
+      ],
+      "detection_keywords": [
+        "plateforme",
+        "SaaS",
+        "marketplace",
+        "multi-utilisateur",
+        "API publique",
+        "abonnement",
+        "multilingue"
+      ]
+    },
+    "XL": {
+      "label": "Projet complexe",
+      "examples": [
+        "multi-tenant",
+        "distribue",
+        "microservices",
+        "reglemente",
+        "systeme critique"
+      ],
+      "detection_keywords": [
+        "multi-tenant",
+        "microservice",
+        "distribue",
+        "reglemente",
+        "HIPAA",
+        "PCI",
+        "bancaire",
+        "critique",
+        "haute disponibilite"
+      ]
+    }
+  },
+  "phases": {
+    "qualifier": {
+      "name": "Qualifier",
+      "min_size": "M",
+      "items": {
+        "S": [],
+        "M": [
+          "Analyse de la demande entrante",
+          "Identification budget vs realite",
+          "Faisabilite technique preliminaire",
+          "Risques bloquants",
+          "Go/No-Go formalise"
+        ],
+        "L": [
+          "Analyse de la demande entrante",
+          "Identification budget vs realite",
+          "Faisabilite technique preliminaire",
+          "Risques bloquants",
+          "Go/No-Go formalise",
+          "Analyse du marche et de la concurrence"
+        ],
+        "XL": [
+          "Analyse de la demande entrante",
+          "Identification budget vs realite",
+          "Faisabilite technique preliminaire",
+          "Risques bloquants",
+          "Go/No-Go formalise",
+          "Analyse du marche et de la concurrence",
+          "Estimation des ressources necessaires",
+          "Analyse de conformite reglementaire"
+        ]
+      }
+    },
+    "comprendre": {
+      "name": "Comprendre",
+      "min_size": "S",
+      "items": {
+        "S": [
+          "Description du projet en une phrase",
+          "Probleme a resoudre",
+          "Cible principale",
+          "Fonctionnalite cle",
+          "Contraintes (budget, delai, equipe)"
+        ],
+        "M": [
+          "Description du projet en une phrase",
+          "Probleme a resoudre",
+          "Cible principale et secondaire",
+          "Fonctionnalites cles (3-5)",
+          "Contraintes (budget, delai, equipe)",
+          "Audit de l existant (site, app, code)",
+          "Parties prenantes et chaine de validation",
+          "Concurrence directe et indirecte"
+        ],
+        "L": [
+          "Description du projet en une phrase",
+          "Probleme a resoudre",
+          "Cible principale et secondaire",
+          "Fonctionnalites cles (5-10)",
+          "Contraintes (budget, delai, equipe)",
+          "Audit de l existant (site, app, code)",
+          "Parties prenantes et chaine de validation",
+          "Concurrence directe et indirecte",
+          "Entretiens utilisateurs et analyse comportementale",
+          "Audit SEO, performance, accessibilite, securite",
+          "Inventaire du contenu existant"
+        ],
+        "XL": [
+          "Description du projet en une phrase",
+          "Probleme a resoudre",
+          "Cible principale et secondaire",
+          "Fonctionnalites cles (10+)",
+          "Contraintes (budget, delai, equipe)",
+          "Audit de l existant (site, app, code)",
+          "Parties prenantes et chaine de validation",
+          "Concurrence directe et indirecte",
+          "Entretiens utilisateurs et analyse comportementale",
+          "Audit SEO, performance, accessibilite, securite",
+          "Inventaire du contenu existant",
+          "Cartographie des donnees",
+          "Inventaire des actifs numeriques",
+          "Analyse de la dette technique",
+          "Cartographie des flux de donnees"
+        ]
+      }
+    },
+    "strategiser": {
+      "name": "Strategiser",
+      "min_size": "M",
+      "items": {
+        "S": [],
+        "M": [
+          "Proposition de valeur unique",
+          "Personas (primaire + secondaire)",
+          "Parcours utilisateurs (user journeys)",
+          "Definition MVP vs versions futures",
+          "Arborescence du site/app"
+        ],
+        "L": [
+          "Proposition de valeur unique",
+          "Personas (primaire + secondaire + tertiaire)",
+          "Parcours utilisateurs detailles",
+          "Definition MVP vs V2 vs V3",
+          "Arborescence du site/app",
+          "Strategie d acquisition et retention",
+          "Architecture de l information (taxonomie)",
+          "Strategie SEO structurelle"
+        ],
+        "XL": [
+          "Proposition de valeur unique",
+          "Personas detailles (primaire + secondaire + tertiaire)",
+          "Parcours utilisateurs detailles avec variantes",
+          "Definition MVP vs V2 vs V3 avec roadmap",
+          "Arborescence du site/app",
+          "Strategie d acquisition et retention",
+          "Architecture de l information (taxonomie)",
+          "Strategie SEO structurelle",
+          "Modele economique detaille",
+          "Strategie de croissance",
+          "Metriques North Star et KPIs",
+          "Analyse de risque strategique"
+        ]
+      }
+    },
+    "specifier": {
+      "name": "Specifier",
+      "min_size": "S",
+      "items": {
+        "S": [
+          "Liste des fonctionnalites priorisees (MoSCoW)",
+          "Description des parcours principaux"
+        ],
+        "M": [
+          "Liste des fonctionnalites priorisees (MoSCoW)",
+          "Description des parcours principaux",
+          "User stories formalisees (As a... I want... So that...)",
+          "Criteres d acceptation par user story",
+          "Regles de gestion",
+          "Roles et permissions (matrice)"
+        ],
+        "L": [
+          "Liste des fonctionnalites priorisees (MoSCoW)",
+          "Description des parcours principaux et secondaires",
+          "User stories formalisees avec criteres d acceptation",
+          "Regles de gestion numerotees (RG-001, RG-002...)",
+          "Roles et permissions (matrice detaillee)",
+          "Specifications des integrations tierces (API, SSO, paiement)",
+          "Notifications et communications (emails, push, SMS)",
+          "Contraintes transversales (i18n, accessibilite, RGPD, offline)",
+          "Cas d erreur et edge cases"
+        ],
+        "XL": [
+          "Liste des fonctionnalites priorisees (MoSCoW)",
+          "Description des parcours principaux et secondaires",
+          "User stories formalisees avec criteres d acceptation",
+          "Regles de gestion numerotees (RG-001, RG-002...)",
+          "Roles et permissions (matrice detaillee)",
+          "Specifications des integrations tierces",
+          "Notifications et communications",
+          "Contraintes transversales",
+          "Cas d erreur et edge cases",
+          "Diagrammes d etat pour entites complexes",
+          "Matrice de tracabilite exigences -> fonctionnalites",
+          "Contrats d interface (API contracts en pseudo-OpenAPI)"
+        ]
+      }
+    },
+    "designer": {
+      "name": "Designer (brief UX/UI)",
+      "min_size": "M",
+      "items": {
+        "S": [],
+        "M": [
+          "Principes UX du projet",
+          "Parcours critiques (happy paths + error paths)",
+          "Liste des ecrans/pages necessaires",
+          "Etats d interface (vide, chargement, erreur, succes)",
+          "References visuelles et benchmarking",
+          "Couleurs de marque et preferences",
+          "Style d images (photo, illustration, icones)",
+          "Breakpoints responsive definis"
+        ],
+        "L": [
+          "Principes UX du projet",
+          "Parcours critiques (happy paths + error paths)",
+          "Liste des ecrans/pages necessaires",
+          "Etats d interface complets (vide, chargement, erreur, succes, partiel, desactive)",
+          "References visuelles et benchmarking",
+          "Breakpoints responsive definis",
+          "User flows et diagrammes d interaction",
+          "Strategie progressive disclosure et formulaires",
+          "Specs wireframing (basse et haute fidelite)",
+          "Prototypage interactif (Figma prototype)",
+          "Plan de tests utilisateurs sur maquettes",
+          "Accessibilite detaillee (clavier, ARIA, lecteur ecran, contrastes WCAG AA)",
+          "Microcopy complet (labels, erreurs, empty states, CTA)",
+          "Direction artistique (moodboard, ambiance, references)",
+          "Palette de couleurs (primaire, secondaire, accent, semantique, neutres)",
+          "Typographie (choix, echelle, line-height, chargement fonts, licences)",
+          "Style iconographique (outlined/filled/duotone, taille)",
+          "Style photographique / illustratif",
+          "Specifications du design system (tokens, composants, patterns)",
+          "Brief accessibilite (WCAG 2.1 AA)",
+          "Checklist handoff design vers dev (Figma, reunion, canal comm)",
+          "Benchmarking UX concurrentiel"
+        ],
+        "XL": [
+          "Principes UX du projet",
+          "Parcours critiques avec variantes",
+          "Liste des ecrans/pages necessaires",
+          "Etats d interface complets",
+          "References visuelles et benchmarking",
+          "Breakpoints responsive definis",
+          "User flows et diagrammes d interaction",
+          "Strategie progressive disclosure et formulaires",
+          "Specs wireframing (basse et haute fidelite)",
+          "Prototypage interactif (Figma prototype)",
+          "Plan de tests utilisateurs (min 5 users par segment)",
+          "Iterations post-tests documentees",
+          "Accessibilite detaillee (clavier, ARIA, lecteur ecran, contrastes WCAG AA/AAA)",
+          "Microcopy complet",
+          "Direction artistique complete (moodboard, palette, typo, icones, photo)",
+          "Palette de couleurs complete (+ verification contrastes WCAG AA/AAA)",
+          "Typographie complete (heading/body/mono, echelle, line-height, chargement, licences)",
+          "Style iconographique (selection ou creation, licences)",
+          "Style photographique / illustratif (stock, custom, AI)",
+          "Specifications du design system complet (tokens, composants atomiques/moleculaires/organismes, patterns)",
+          "Documentation composants interactive (Storybook ou equivalent)",
+          "Brief accessibilite (WCAG 2.1 AA/AAA)",
+          "Checklist handoff design vers dev",
+          "Benchmarking UX concurrentiel",
+          "Specifications dark mode / themes",
+          "Specifications animations et micro-interactions",
+          "Specifications motion design (transitions pages/etats)",
+          "Maquettes emails transactionnels",
+          "Design tokens exportes (JSON / CSS variables / Tailwind config)",
+          "Pipeline d optimisation assets (WebP/AVIF, srcset, lazy loading)",
+          "Favicons et app icons (toutes tailles : 16, 32, 180, 192, 512px)",
+          "OG images et social cards",
+          "Convention de nommage des assets",
+          "Figma structure avec inspect active"
+        ]
+      }
+    },
+    "architecturer": {
+      "name": "Architecturer",
+      "min_size": "S",
+      "items": {
+        "S": [
+          "Choix de stack (frontend, backend, DB) avec justification",
+          "Hebergement (ou, combien)"
+        ],
+        "M": [
+          "Choix de stack justifie (format ADR)",
+          "Hebergement (ou, combien, pourquoi)",
+          "Architecture API (REST/GraphQL, endpoints principaux)",
+          "Modele de donnees (entites, relations)",
+          "Strategie d authentification",
+          "Strategie de test (types, outils, couverture cible)",
+          "Objectif de couverture de tests"
+        ],
+        "L": [
+          "Choix de stack justifie (format ADR)",
+          "Hebergement (ou, combien, pourquoi)",
+          "Architecture API detaillee",
+          "Modele de donnees complet",
+          "Strategie d authentification",
+          "Pipeline CI/CD et environnements",
+          "Conventions de code (linter, formatter, nommage)",
+          "Strategie de cache et monitoring",
+          "Securite (OWASP, secrets, chiffrement)",
+          "Strategie de test (types, outils, couverture cible)",
+          "Infrastructure de test (fixtures, factories, seed data)",
+          "Plan de test complet (regression, perf, securite, accessibilite)",
+          "Seuils de qualite (Lighthouse, temps reponse, WCAG)",
+          "Protocole de recette client (UAT)",
+          "Bug tracking et processus de resolution"
+        ],
+        "XL": [
+          "Choix de stack justifie (format ADR multiples)",
+          "Hebergement detaille",
+          "Architecture API detaillee avec versioning",
+          "Modele de donnees complet avec diagramme",
+          "Strategie d authentification",
+          "Pipeline CI/CD et environnements",
+          "Conventions de code",
+          "Strategie de cache et monitoring",
+          "Securite (OWASP, secrets, chiffrement)",
+          "Architecture C4 (contexte + conteneurs + composants)",
+          "Infrastructure as Code (approche)",
+          "Plan de disaster recovery (RPO/RTO)",
+          "Strategie de scalabilite",
+          "Strategie de test (types, outils, couverture cible)",
+          "Infrastructure de test (fixtures, factories, seed data)",
+          "Plan de test complet",
+          "Seuils de qualite",
+          "Protocole de recette client (UAT)",
+          "Bug tracking et processus de resolution",
+          "Tests de migration et rollback",
+          "Tests de conformite RGPD",
+          "Smoke tests post-deploiement"
+        ]
+      }
+    },
+    "planifier": {
+      "name": "Planifier",
+      "min_size": "M",
+      "items": {
+        "S": [],
+        "M": [
+          "Plan de contenu (qui produit quoi, quand)",
+          "Inventaire du contenu existant et gap analysis",
+          "Estimation par lot/feature (complexite)",
+          "Planning macro (jalons cles)",
+          "RACI simplifie",
+          "Proposition commerciale et conditions de paiement"
+        ],
+        "L": [
+          "Plan de contenu (qui produit quoi, quand)",
+          "Inventaire du contenu existant et gap analysis",
+          "Estimation par lot/feature (complexite)",
+          "Planning macro (jalons cles)",
+          "RACI detaille",
+          "Ceremonies agiles et outils de gestion",
+          "Contrat de prestation (checklist clauses)",
+          "Conformite juridique (RGPD, CGU/CGV)",
+          "Charte editoriale (ton, voix, style)",
+          "Strategie SEO on-page (mots-cles, meta, balises)",
+          "Plan de migration de contenu",
+          "Gestion des droits d auteur",
+          "Clause de propriete intellectuelle",
+          "NDA et DPA si applicable"
+        ],
+        "XL": [
+          "Plan de contenu (qui produit quoi, quand)",
+          "Inventaire du contenu existant et gap analysis",
+          "Estimation par lot/feature (complexite)",
+          "Planning macro (jalons cles)",
+          "RACI detaille",
+          "Ceremonies agiles et outils de gestion",
+          "Contrat de prestation (checklist clauses)",
+          "Conformite juridique (RGPD, CGU/CGV)",
+          "Charte editoriale (ton, voix, style)",
+          "Strategie SEO on-page (mots-cles, meta, balises)",
+          "Plan de migration de contenu",
+          "Gestion des droits d auteur",
+          "Clause de propriete intellectuelle",
+          "NDA et DPA si applicable",
+          "SLA et clause de reversibilite",
+          "Gestion de la sous-traitance",
+          "Plan de communication projet",
+          "Strategie de contenu dynamique/personnalise",
+          "Politique de moderation",
+          "Contrat de sous-traitance back-to-back",
+          "Gestion noms de domaine et licences tierces"
+        ]
+      }
+    },
+    "valider": {
+      "name": "Valider (gate pre-dev)",
+      "min_size": "S",
+      "items": {
+        "S": [
+          "Brief valide",
+          "Stack choisie",
+          "Fonctionnalites listees"
+        ],
+        "M": [
+          "Brief valide",
+          "Stack choisie",
+          "Fonctionnalites listees",
+          "Specs fonctionnelles signees",
+          "Architecture documentee",
+          "Planning valide"
+        ],
+        "L": [
+          "Brief valide",
+          "Stack choisie",
+          "Fonctionnalites listees",
+          "Specs fonctionnelles signees",
+          "Architecture documentee",
+          "Planning valide",
+          "Design system brief",
+          "Strategie de test definie",
+          "Pre-launch checklist complete",
+          "Strategie de deploiement definie",
+          "Plan de formation utilisateurs",
+          "Documentation technique et utilisateur",
+          "Analytics et tracking configures",
+          "Checklist pre-lancement (DNS, SSL, redirections, sitemap)"
+        ],
+        "XL": [
+          "Brief valide",
+          "Stack choisie",
+          "Fonctionnalites listees",
+          "Specs fonctionnelles signees",
+          "Architecture documentee",
+          "Planning valide",
+          "Design system brief",
+          "Strategie de test definie",
+          "Pre-launch checklist complete",
+          "Strategie de deploiement definie",
+          "Plan de formation utilisateurs",
+          "Documentation technique et utilisateur",
+          "Analytics et tracking configures",
+          "Checklist pre-lancement (DNS, SSL, redirections, sitemap)",
+          "Contrat signe",
+          "DPA signe",
+          "Pentest planifie",
+          "Fenetre de deploiement definie",
+          "Pipeline teste a vide (dry run)",
+          "Plan de communication lancement",
+          "Plan de support post-lancement",
+          "Plan A/B testing post-lancement"
+        ]
+      }
+    }
+  },
+  "phase_order": [
+    "qualifier",
+    "comprendre",
+    "strategiser",
+    "specifier",
+    "designer",
+    "architecturer",
+    "planifier",
+    "valider"
+  ]
+}

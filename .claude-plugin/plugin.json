@@ -1,0 +1,15 @@
+{
+  "name": "project-architect",
+  "version": "1.0.0",
+  "description": "Preparation complete de projet de dev — de la qualification a la gate pre-dev. Une seule commande, workflow adaptatif S/M/L/XL.",
+  "author": {
+    "name": "ATUM SAS"
+  },
+  "skills": ["./commands/"],
+  "agents": [
+    "./agents/discovery-auditor.md",
+    "./agents/spec-architect.md",
+    "./agents/tech-architect.md",
+    "./agents/pre-dev-validator.md"
+  ]
+}
